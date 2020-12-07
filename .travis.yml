@@ -1,0 +1,9 @@
+language: java
+sudo: false
+
+notifications:
+  email:
+    recipients:
+      - geshachapik@gmail.com
+    on_success: never
+    on_failure: always
