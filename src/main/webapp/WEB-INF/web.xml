@@ -80,6 +80,11 @@
         <servlet-class>chaplinskiy.servlet.web.userServlet.UpdateUserServlet</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>PingServlet</servlet-name>
+        <servlet-class>chaplinskiy.servlet.web.PingServlet</servlet-class>
+    </servlet>
+
     <servlet-mapping>
         <servlet-name>RegionGetServlet</servlet-name>
         <url-pattern>/getRegion</url-pattern>
@@ -153,6 +158,11 @@
     <servlet-mapping>
         <servlet-name>UpdateUserServlet</servlet-name>
         <url-pattern>/updateUserServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>PingServlet</servlet-name>
+        <url-pattern>/ping</url-pattern>
     </servlet-mapping>
 
 </web-app>
