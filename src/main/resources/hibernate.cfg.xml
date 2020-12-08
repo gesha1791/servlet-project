@@ -12,13 +12,13 @@
         </property>
 
         <property name="hibernate.connection.url">
-            jdbc:postgresql://localhost:5432/servlets
+            jdbc:postgresql://ec2-54-225-254-115.compute-1.amazonaws.com:5432/d9d2jsl5na737l
         </property>
         <property name="hibernate.connection.username">
-            postgres
+            cqnjvxucjofgqw
         </property>
         <property name="hibernate.connection.password">
-            admin
+            f4ca97efb101055fcd77e83a40a928b2c7b3d6ee6370c485ba143b6764cb20bb
         </property>
 
         <property name="show_sql">true</property>

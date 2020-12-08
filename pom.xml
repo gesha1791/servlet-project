@@ -59,9 +59,10 @@
                 <artifactId>flyway-maven-plugin</artifactId>
                 <version>7.2.1</version>
                 <configuration>
-                    <url>jdbc:postgresql://localhost:5432/servlets</url>
-                    <user>postgres</user>
-                    <password>admin</password>
+                    <url>jdbc:postgresql://ec2-54-225-254-115.compute-1.amazonaws.com:5432/d9d2jsl5na737l</url>
+                    <user>cqnjvxucjofgqw</user>
+                    <password>f4ca97efb101055fcd77e83a40a928b2c7b3d6ee6370c485ba143b6764cb20bb</password>
+                    <baselineOnMigrate>true</baselineOnMigrate>
                 </configuration>
                 <dependencies>
                     <dependency>
