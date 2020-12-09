@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "038796d1-fee9-4cb4-994f-ed28e28e0107",
+		"name": "PostCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetAllPosts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/getAllPosts",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"getAllPosts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPost",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/getPost?id=4",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"getPost"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletePost",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/deletePost?id=4",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"deletePost"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreatePost",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/createPost?content=\"Post new\"",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"createPost"
+					],
+					"query": [
+						{
+							"key": "content",
+							"value": "\"Post new\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdatePost",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/updatePost?content=\"Post new update\"&id=4",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"updatePost"
+					],
+					"query": [
+						{
+							"key": "content",
+							"value": "\"Post new update\""
+						},
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "72691b0f-255e-4ace-8194-92b8986f404d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "06edd522-ddab-45a2-a1dc-4235568a6b07",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

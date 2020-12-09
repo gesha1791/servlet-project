@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "550874ea-3efc-4ced-bdf3-a9e89f68fb01",
+		"name": "RegionCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetRegion",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/getRegion?id=4",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"getRegion"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllRegion",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/getAllRegion",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"getAllRegion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteRegionById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/deleteRegion?id=2",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"deleteRegion"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateRegion",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/createRegion?name=Mozambick",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"createRegion"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Mozambick"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateRegion",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/updateRegion?name=New-York&id=1",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"updateRegion"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "New-York"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
