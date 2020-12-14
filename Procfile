@@ -1,1 +1,1 @@
-web: java -jar target/servlet-project-1.0-SNAPSHOT.jar
+java -jar target/dependency/webapp-runner.jar target/*.war
