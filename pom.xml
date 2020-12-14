@@ -52,6 +52,13 @@
             <artifactId>postgresql</artifactId>
             <version>${postgresql.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.heroku</groupId>
+            <artifactId>webapp-runner</artifactId>
+            <version>9.0.30.0</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 
     <build>
