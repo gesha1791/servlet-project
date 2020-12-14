@@ -7,7 +7,7 @@
     <groupId>org.example</groupId>
     <artifactId>servlet-project</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
 
     <properties>
@@ -75,7 +75,10 @@
                 </dependencies>
             </plugin>
 
-           <!-- <plugin>
+
+
+            <!--
+            <plugin>
                 <groupId>com.heroku.sdk</groupId>
                 <artifactId>heroku-maven-plugin</artifactId>
                 <version>3.0.3</version>
@@ -88,14 +91,20 @@
                         <web>java -jar target/servlet-project-1.0-SNAPSHOT.jar</web>
                     </processTypes>
                 </configuration>
-
-
             </plugin>
 -->
+<!--
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.0</version>
+            </plugin>
+-->
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
-                <version>3.0.1</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
@@ -103,9 +112,9 @@
                         <configuration>
                             <artifactItems>
                                 <artifactItem>
-                                    <groupId>com.github.jsimone</groupId>
+                                    <groupId>com.heroku</groupId>
                                     <artifactId>webapp-runner</artifactId>
-                                    <version>8.5.11.3</version>
+                                    <version>9.0.30.0</version>
                                     <destFileName>webapp-runner.jar</destFileName>
                                 </artifactItem>
                             </artifactItems>
@@ -113,16 +122,6 @@
                     </execution>
                 </executions>
             </plugin>
-            <!-- Tomcat plugin -->
-           <!-- <plugin>
-                <groupId>org.apache.tomcat.maven</groupId>
-                <artifactId>tomcat7-maven-plugin</artifactId>
-                <version>${tomcat.plugin.version}</version>
-                <configuration>
-                    <path>/</path>
-                    <port>8088</port>
-                </configuration>
-            </plugin>-->
         </plugins>
     </build>
 
