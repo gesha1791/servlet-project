@@ -52,13 +52,6 @@
             <artifactId>postgresql</artifactId>
             <version>${postgresql.version}</version>
         </dependency>
-
-        <dependency>
-            <groupId>com.heroku</groupId>
-            <artifactId>webapp-runner</artifactId>
-            <version>9.0.30.0</version>
-            <scope>provided</scope>
-        </dependency>
     </dependencies>
 
     <build>
@@ -81,33 +74,6 @@
                     </dependency>
                 </dependencies>
             </plugin>
-
-
-
-            <!--
-            <plugin>
-                <groupId>com.heroku.sdk</groupId>
-                <artifactId>heroku-maven-plugin</artifactId>
-                <version>3.0.3</version>
-                <configuration>
-                    <includeTarget>false</includeTarget>
-                    <includes>
-                        <include>target/servlet-project-1.0-SNAPSHOT.jar</include>
-                    </includes>
-                    <processTypes>
-                        <web>java -jar target/servlet-project-1.0-SNAPSHOT.jar</web>
-                    </processTypes>
-                </configuration>
-            </plugin>
--->
-<!--
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>3.2.0</version>
-            </plugin>
--->
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
